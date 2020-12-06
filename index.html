@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html> <!-- -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jinomad Story</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="layer">
+      <div class="name-container">
+        <form class="name-form">
+          <input class="name-box" type="text" placeholder="what is your name?" >
+        </form>
+      </div>
+
+      <div class="main-container unshowing">
+        <div class="clock-container"> <!-- clock -->
+          <div class="clock-time">
+            <span class="clock-hour"></span>
+            <span class="clock-second"></span>
+          </div>
+            <span class="clock-date"></span>
+        </div>
+
+        <div class="list-container unshowing"> <!-- list -->
+          <div>오늘의 날짜</div>
+          <ul></ul> <!-- 리스트 목록 -->
+          <button>ToDo 추가</button>
+        </div>
+
+        <div class="settings-container unshowing">  <!-- settings -->
+          <form>
+            <dl>
+              <dt>닉네임 변경</dt>
+              <dd><input type="text" placeholder="test"></dd>
+              
+              <dt>다크테마 모드</dt>
+              <dd><input type="checkbox"></dd>
+
+              <dt>데이터 초기화</dt>
+              <dd><button>초기화</button></dd>
+            </dl>
+          </form>
+        </div>
+
+        <div class="menu-container">  <!-- menu -->
+          <ul class="menu-list">
+            <li class="menu-item on"><a href="#" class="home-link"><img src="icon/home-img.png">home</a></li>
+            <li class="menu-item"><a href="#" class="list-link"><img src="icon/list-img.png">list</a></li>
+            <li class="menu-item"><a href="#" class="settings-link"><img src="icon/settings-img.png">set</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+
+  <script src="background.js"></script>
+  <script src="name.js"></script>
+  <script src="clock.js"></script>
+  </body>
+</html>
